@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNG Stage Zero Task</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="profile-header">
+        <figure class="avatar-figure">
+          <img
+            src="https://api.dicebear.com/7.x/avataaars/svg?seed=blessing"
+            alt="Ubiomor Blessing profile picture"
+            class="avatar"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <h1 class="user-name" data-testid="test-user-name">Ubiomor Blessing</h1>
+        <p class="user-title" data-testid="test-user-title">
+          Frontend Developer
+        </p>
+        <time class="current-time" data-testid="test-user-time">
+          Loading...
+        </time>
+      </header>
+
+      <div class="card-body">
+        <p class="user-bio" data-testid="test-user-bio">
+          Passionate about crafting engaging and responsive user interfaces
+          through clean code, modern design, and continuous learning. Based in
+          Nigeria, collaborating remotely with teams around the world to build
+          impactful and user-friendly web experiences.
+        </p>
+
+        <nav class="social-nav" aria-label="Social media links">
+          <h2 class="social-heading" data-testid="test-user-social-heading">
+            My socials
+          </h2>
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/blessing-ubiomor/"
+                class="social-link"
+                data-testid="test-user-social-linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/blessing986"
+                class="social-link"
+                data-testid="test-user-social-github"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sections-wrapper">
+          <section class="section">
+            <h2 class="section-title">Hobbies</h2>
+            <ul class="list hobbies-list" data-testid="test-user-hobbies">
+              <li class="list-item">Traveling</li>
+              <li class="list-item">Hiking</li>
+              <li class="list-item">Watching movies</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">Dislikes</h2>
+            <ul class="list dislikes-list" data-testid="test-user-dislikes">
+              <li class="list-item">Pretenders</li>
+              <li class="list-item">Being late</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
