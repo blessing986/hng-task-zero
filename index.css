@@ -29,6 +29,25 @@ body {
   transform: translateY(-5px);
 }
 
+.nav-links {
+  text-align: end;
+  margin-bottom: 1.5rem;
+}
+
+.nav-links a {
+  color: #3a2e1f;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 .profile-header {
   background: linear-gradient(135deg, #9be15d 0%, #00e3ae 100%);
   background-color: black;
