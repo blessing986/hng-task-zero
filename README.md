@@ -1,40 +1,80 @@
-# Profile Card Component
+# 🌐 Multi-Page Portfolio
 
-A modern, accessible, and responsive profile card built with semantic HTML, CSS, and vanilla JavaScript. Features real-time timestamp updates, social media links, and user hobbies/dislikes sections.
+A modern, accessible, and responsive **3-page personal website** built using **semantic HTML**, **CSS**, and **vanilla JavaScript**.  
+This project includes a **Profile Page**, **About Page**, and **Contact Page**, designed to meet HNG Stage 0 Task requirements with complete accessibility, testability, and responsiveness.
 
-## Features
+## ✨ Features
 
 - ✅ **Fully Accessible** - WCAG 2.1 AA compliant with semantic HTML and ARIA labels
 - 📱 **Responsive Design** - Works seamlessly on mobile, tablet, and desktop
 - 🎨 **Modern UI** - Gradient backgrounds, smooth animations, and hover effects
+- 🧭 **Multi-Page Navigation** — Seamless links between Home, About, and Contact pages
 - ⌨️ **Keyboard Navigation** - All interactive elements are keyboard accessible
 - 🧪 **Test-Ready** - Every element has `data-testid` attributes for automated testing
 - ⏱️ **Live Updates** - Current time in milliseconds updates every second
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 HNG-STAGE0-TASK/
-├── index.html          # Main HTML structure
-├── index.css           # Styles and design
-├── script.js           # JavaScript functionality
-└── README.md           # This file
+├── index.html # Home/Profile page
+├── index.css # Styles for the profile page
+├── script.js # Dynamic JavaScript for timestamp updates
+│
+├── about.html # About Me page
+├── about.css # Styles for the About page
+│
+├── contact.html # Contact page with form validation
+├── contact.css # Styles for the Contact page
+├── contact.js # Handles form validation and success message
+│
+└── README.md # Project documentation
 ```
 
-## Required Test IDs
+## 🧩 Test ID Reference
 
-All elements include the following `data-testid` attributes for automated testing:
+Each page includes consistent `data-testid` attributes for automated testing.
 
-- `test-profile-card` - Main article container
-- `test-user-avatar` - Profile image
-- `test-user-name` - User's name
-- `test-user-time` - Current timestamp in milliseconds
-- `test-user-bio` - Biography paragraph
-- `test-user-social-links` - Social links container
-- `test-user-social-linkedin` - LinkedIn link
-- `test-user-social-github` - GitHub link
-- `test-user-hobbies` - Hobbies list
-- `test-user-dislikes` - Dislikes list
+### **Profile Page (`index.html`)**
+
+| Element                | Test ID                     |
+| ---------------------- | --------------------------- |
+| Main card              | `test-profile-card`         |
+| Avatar                 | `test-user-avatar`          |
+| User name              | `test-user-name`            |
+| User title             | `test-user-title`           |
+| Timestamp              | `test-user-time`            |
+| Bio                    | `test-user-bio`             |
+| Social heading         | `test-user-social-heading`  |
+| Social links container | `test-user-social-links`    |
+| LinkedIn link          | `test-user-social-linkedin` |
+| GitHub link            | `test-user-social-github`   |
+| Hobbies list           | `test-user-hobbies`         |
+| Dislikes list          | `test-user-dislikes`        |
+
+### **About Page (`about.html`)**
+
+| Section                | Test ID                  |
+| ---------------------- | ------------------------ |
+| Entire page            | `test-about-page`        |
+| Bio section            | `test-about-bio`         |
+| Goals section          | `test-about-goals`       |
+| Confidence section     | `test-about-confidence`  |
+| Future note section    | `test-about-future-note` |
+| Extra thoughts section | `test-about-extra`       |
+
+### **Contact Page (`contact.html`)**
+
+| Element          | Test ID                                 |
+| ---------------- | --------------------------------------- |
+| Success message  | `test-contact-success`                  |
+| Full name input  | `test-contact-name`                     |
+| Email input      | `test-contact-email`                    |
+| Subject input    | `test-contact-subject`                  |
+| Message textarea | `test-contact-message`                  |
+| Submit button    | `test-contact-submit`                   |
+| Error messages   | `test-contact-error-*` (for each field) |
+
 
 ## Installation & Setup
 
@@ -43,27 +83,24 @@ All elements include the following `data-testid` attributes for automated testin
 - A modern web browser (Chrome, Firefox, Safari, or Edge)
 - No build tools or dependencies required!
 
-### Run Locally
+### Steps
 
-1. **Download the files**
+1. **Clone or download the repository**
+
    ```bash
-   # Create a new directory
-   mkdir HNG-STAGE0-TASK
-   cd HNG-STAGE0-TASK
+   git clone https://github.com/blessing986/hng-task-zero.git
+   cd hng-task-zero
    ```
 
-2. **Save the files**
-   - Save `index.html` from the artifact
-   - Save `index.css` from the artifact
-   - Save `script.js` from the artifact
-   - Ensure the three files are in the same directory
+2. **Open the project**
 
-3. **Open in browser**
-   - Double-click `index.html`, or
-   - Right-click `index.html` → Open with → Your browser, or
-   - Drag and drop `index.html` into your browser window
+   - Double-click any of the .html files, or
+   - Right-click → Open with → your preferred browser
 
-That's it! The profile card should now be running in your browser.
+3. **Explore the pages**
+   - index.html → Profile page
+   - about.html → About Me page
+   - contact.html → Contact Form page
 
 ## Browser Support
 
